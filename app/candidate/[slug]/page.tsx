@@ -3,9 +3,13 @@ import { notFound } from "next/navigation";
 import { candidates } from "@/utils/candidates";
 import Link from "next/link";
 
-export default async function CandidatePage({ params }: { params: { slug: string } }) {
-  // Await params in case it's a Promise (per Next.js App Router requirements)
-  const { slug } = await params;
+// Remove the Props type entirely
+export default async function CandidatePage({
+  params,
+}: {
+  params: { slug: string }
+}) {
+  const { slug } = params;
 
   const candidate = candidates.find(
     c => c.name.toLowerCase().replace(/\s+/g, "-") === slug
@@ -23,6 +27,8 @@ export default async function CandidatePage({ params }: { params: { slug: string
       default: return "#0073FF";
     }
   };
+
+  // ...existing code...
 
   const roleColor = getRoleColor(candidate.role);
 
