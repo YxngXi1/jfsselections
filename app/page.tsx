@@ -96,7 +96,7 @@ export default function Home() {
             }
             style={{ gap: "126px"}}
           >
-            {presidentCandidates.map((candidate, idx) => (
+            {presidentCandidates.map((candidate) => (
               <Link
                 key={candidate.name}
                 href={`/candidate/${candidate.name.toLowerCase().replace(/\s+/g, "-")}`}
@@ -153,7 +153,7 @@ export default function Home() {
             }
             style={{ gap: "126px"}}
           >
-            {vicePresidentCandidates.map((candidate, idx) => (
+            {vicePresidentCandidates.map((candidate) => (
               <Link
                 key={candidate.name}
                 href={`/candidate/${candidate.name.toLowerCase().replace(/\s+/g, "-")}`}
@@ -210,7 +210,7 @@ export default function Home() {
             }
             style={{ gap: "126px"}}
           >
-            {socialConvenorCandidates.map((candidate, idx) => (
+            {socialConvenorCandidates.map((candidate) => (
               <Link
                 key={candidate.name}
                 href={`/candidate/${candidate.name.toLowerCase().replace(/\s+/g, "-")}`}
@@ -267,7 +267,7 @@ export default function Home() {
             }
             style={{ gap: "126px"}}
           >
-            {clubsLiaisonCandidates.map((candidate, idx) => (
+            {clubsLiaisonCandidates.map((candidate) => (
               <Link
                 key={candidate.name}
                 href={`/candidate/${candidate.name.toLowerCase().replace(/\s+/g, "-")}`}
