@@ -1,15 +1,12 @@
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { candidates } from "@/utils/candidates";
+import Image from "next/image";
 import Link from "next/link";
 
-// Remove the Props type entirely
-export default async function CandidatePage({
-  params,
-}: {
-  params: { slug: string }
-}) {
-  const { slug } = params;
+export default async function CandidatePage(
+  props: { params: { slug: string }; searchParams?: Record<string, string | string[]> }
+) {
+  const { slug } = props.params;
 
   const candidate = candidates.find(
     c => c.name.toLowerCase().replace(/\s+/g, "-") === slug
@@ -17,20 +14,23 @@ export default async function CandidatePage({
 
   if (!candidate) return notFound();
 
-  // Get background color based on role
   const getRoleColor = (role: string) => {
-    switch(role) {
-      case "president": return "#0073FF";
-      case "vicepresident": return "#FF4741";
-      case "socialconvenor": return "#FF7F00";
-      case "clubsliason": return "#32CD32";
-      default: return "#0073FF";
+    switch (role) {
+      case "president":
+        return "#0073FF";
+      case "vicepresident":
+        return "#FF4741";
+      case "socialconvenor":
+        return "#FF7F00";
+      case "clubsliason":
+        return "#32CD32";
+      default:
+        return "#0073FF";
     }
   };
 
-  // ...existing code...
-
   const roleColor = getRoleColor(candidate.role);
+
 
   return (
     <>
