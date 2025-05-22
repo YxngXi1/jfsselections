@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const presidentCandidates = candidates.filter(c => c.role === "president");
-  const vicePresidentCandidates = candidates.filter(c => c.role === "vicepresident");
+  const vicePresidentCandidates = candidates.filter(c => c.role === "vice president");
   const socialConvenorCandidates = candidates.filter(c => c.role === "socialconvenor");
   const clubsLiaisonCandidates = candidates.filter(c => c.role === "clubsliason");
   const [scrollY, setScrollY] = useState(0);
