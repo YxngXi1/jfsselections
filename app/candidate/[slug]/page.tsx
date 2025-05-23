@@ -14,26 +14,34 @@ export default async function CandidatePage(
 
   if (!candidate) return notFound();
 
-  const getRoleColor = (role: string) => {
-    switch (role) {
-      case "president":
-        return "#0073FF";
-      case "vicepresident":
-        return "#FF4741";
-      case "socialconvenor":
-        return "#FF7F00";
-      case "clubsliason":
-        return "#32CD32";
-      default:
-        return "#0073FF";
-    }
-  };
+const getRoleColor = (role: string) => {
+  const normalized = role.toLowerCase().replace(/\s+/g, ""); // e.g., "Vice President" → "vicepresident"
+  switch (normalized) {
+    case "president":
+      return "#0073FF";
+    case "vicepresident":
+      return "#FF4741";
+    case "socialconvenor":
+      return "#FF7F00";
+    case "clubsliason":
+      return "#32CD32";
+    default:
+      return "#0073FF";
+  }
+};
+
 
   const roleColor = getRoleColor(candidate.role);
 
 
   return (
     <>
+      <hr className="h-[20px]"></hr>
+      <div className="border-0 flex justify-center items-center w-full mt-8">
+        <Link href='/'>
+          <p className="">&larr; Return Home</p>
+        </Link>
+      </div>
       <section className="flex flex-col items-center pt-20 mt-20">
         <hr className="h-[100px]"/>
         <main className="h-full flex justify-start items-center gap-x-10 w-3/4">
@@ -58,6 +66,11 @@ export default async function CandidatePage(
             >
               <h2 className="m-4 uppercase text-3xl font-light ml-4">&#8205; {candidate.role} CANDIDATE</h2>
             </div>
+            <Link href={candidate.poster ?? "#"}>
+              <button className="text-2xl font-light hover:cursor-pointer">
+                View Candidate Poster &rarr;
+              </button>
+            </Link>
           </div>
         </main>
         <hr className="h-[21px]"></hr>
