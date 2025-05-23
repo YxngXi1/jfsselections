@@ -42,9 +42,13 @@ const getRoleColor = (role: string) => {
           <p className="">&larr; Return Home</p>
         </Link>
       </div>
+
+
       <section className="flex flex-col items-center pt-20 mt-20">
         <hr className="h-[100px]"/>
-        <main className="h-full flex justify-start items-center gap-x-10 w-3/4">
+        <main className="h-full flex flex-col md:flex-row justify-start items-center gap-x-10 w-3/4">
+
+
           <div
             className="bg-white shadow-lg flex flex-col items-center p-6 rounded-lg">
             <div className="relative rounded-lg" style={{ width: 312, height: 312 }}>
@@ -58,10 +62,11 @@ const getRoleColor = (role: string) => {
               />
             </div>
           </div>
-          <div className="flex flex-col h-full w-full text-left gap-y-10">
+          <hr className="h-[5px] md:h-0 border-0"></hr>
+          <div className="mt-2 flex flex-col md:justify-start md:items-start justify-center items-center h-full w-full text-center md:text-left gap-y-10">
             <h1 className="text-6xl font-thin"> {candidate.name}</h1>
             <div 
-              className="w-[549px] h-[84px] flex justify-start items-center text-white pl-4"
+              className="w-[300px] h-[80px] md:w-[549px] md:h-[84px] flex justify-start items-center text-white pl-4"
               style={{ backgroundColor: roleColor }}
             >
               <h2 className="m-4 uppercase text-3xl font-light ml-4">&#8205; {candidate.role} CANDIDATE</h2>
