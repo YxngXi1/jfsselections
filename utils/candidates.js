@@ -10,6 +10,7 @@ export const candidates = [
     image: "/candidates/president/Hamza.jpg",
     role: "president",
     video: "https://www.youtube.com/watch?v=example2",
+    poster: "/posters/president/hamza.pdf",
   },
   {
     name: "DAVID CHEN",
@@ -28,6 +29,18 @@ export const candidates = [
     image: "/candidates/vicepresident/amrita.jpg",
     role: "vice president",
     video: "https://www.youtube.com/watch?v=example5",
+  },
+  {
+    name: "ISABELLE NG",
+    image: "/candidates/socialconvenor/Isabelle.jpg",
+    role: "social convenor",
+    video: "https://www.youtube.com/watch?v=example6",
+  },
+  {
+    name: "NADINE",
+    image: "/candidates/clubsliason/nadine.jpg",
+    role: "clubs liason",
+    video: "https://www.youtube.com/watch?v=example7",
   },
     //   and more for social convenors, treasurers, and other roles
 ];
