@@ -48,24 +48,26 @@ export default function Home() {
 
 
           <div className="flex flex-col justify-center items-center gap-y-2">
-            <h1 className="font-bold text-9xl text-[#0073FF]" data-aos="fade-up">Fraser Elections</h1>
-            <p className="text-white text-4xl w-2/3 text-wrap mx-auto font-light" data-aos="fade-up" data-aos-delay="300">View the candidates for the 2025 JohnFraser SAC elections, made by <a className="underline text-[#0073FF]">JFSS SAC</a></p>
+            <h1 className="font-bold text-5xl md:text-9xl text-[#0073FF]" data-aos="fade-up">Fraser Elections</h1>
+            <p className="text-white text-xl md:text-4xl w-2/3 text-wrap mx-auto font-light" data-aos="fade-up" data-aos-delay="300">View the candidates for the 2025 JohnFraser SAC elections, made by <a className="underline text-[#0073FF]" href="https://johnfrasersac.com">JFSS SAC</a></p>
           </div>
 
-
-          <div className="flex justify-center tiems-center gap-x-30 w-full" data-aos="fade-up" data-aos-delay="600">
-            <button 
-              className="text-2xl font-light bg-[#0073FF] text-white rounded-3xl w-[182px] h-[65px] cursor-pointer hover:bg-white hover:border hover:border-[#0073FF] hover:text-[#0073FF] transition duration-700 ease-in-out"
-              onClick={() => {
-                document.getElementById('candidates')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Learn More
-            </button>
-            <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out">
-              Vote Now
-            </button>
+          <div className="w-full justify-center items-center flex">
+            <div className="w-full mx-auto flex justify-center items-center gap-y-5 gap-x-30 w-full flex-col md:flex-row " data-aos="fade-up" data-aos-delay="600">
+              <button 
+                className="mx-auto text-lg md:text-2xl font-light bg-[#0073FF] text-white rounded-3xl w-[140px] h-[50px] md:w-[182px] md:h-[65px] cursor-pointer hover:bg-white hover:border hover:border-[#0073FF] hover:text-[#0073FF] transition duration-700 ease-in-out"
+                onClick={() => {
+                  document.getElementById('candidates')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Learn More
+              </button>
+              <button className="text-lg w-[140px] h-[50px] mx-auto md:text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl md:w-[182px] md:h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out">
+                Vote Now
+              </button>
+            </div>
           </div>
+          
 
 
 
@@ -73,7 +75,7 @@ export default function Home() {
       </section>
 
       {/* CANADIDATES */}
-
+      <hr className="h-[20px] md:h-0 border-0"></hr>
       <section className="" id="candidates">
 
         {/* PRESIDENTS */}
@@ -134,7 +136,7 @@ export default function Home() {
         </main>
 
         {/* VICE PRESIDENTS */}
-
+        <hr className="h-[20px] md:h-0 border-0"></hr>
         <main className="min-h-screen flex flex-col justify-center items-center text-center gap-y-10">
           <div className="flex flex-col gap-y-2 justify-center items-center">
             <h1 className="text-6xl font-bold text-center">VICE PRESIDENT</h1>
@@ -192,6 +194,7 @@ export default function Home() {
 
         {/* SOCIAL CONVENOR */}
 
+        <hr className="h-[20px] md:h-0 border-0"></hr>
         <main className="min-h-screen flex flex-col justify-center items-center text-center gap-y-10">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <h1 className="text-6xl font-bold text-center">SOCIAL CONVENOR</h1>
@@ -249,6 +252,7 @@ export default function Home() {
 
         {/* CLUBS LIAISON */}
 
+        <hr className="h-[20px] md:h-0 border-0"></hr>
         <main className="min-h-screen flex flex-col justify-center items-center text-center gap-y-10">
           <div className="flex flex-col gap-y-2 justify-center items-center">
             <h1 className="text-6xl font-bold text-center">CLUBS LIAISON</h1>
@@ -304,6 +308,7 @@ export default function Home() {
           <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Vote Now</button>
         </main>
       </section>
+      <hr className="h-[20px] md:h-0 border-0"></hr>
     </>
   );
 }
