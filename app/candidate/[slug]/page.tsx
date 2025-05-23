@@ -71,15 +71,25 @@ const getRoleColor = (role: string) => {
             >
               <h2 className="m-4 uppercase text-3xl font-light ml-4">&#8205; {candidate.role} CANDIDATE</h2>
             </div>
-            <Link href={candidate.poster ?? "#"}>
-              <button className="text-2xl font-light hover:cursor-pointer">
-                View Candidate Poster &rarr;
+            {candidate.poster ? (
+              <Link href={candidate.poster}>
+                <button className="text-2xl font-light hover:cursor-pointer">
+                  View Candidate Poster &rarr;
+                </button>
+              </Link>
+            ) : (
+              <button
+                className="text-2xl font-light bg-gray-200 text-gray-500 cursor-not-allowed"
+                disabled
+                title="Poster not available"
+              >
+                Poster Coming Soon
               </button>
-            </Link>
+            )}
           </div>
         </main>
         <hr className="h-[21px]"></hr>
-        {candidate.video && (
+        {candidate.video ? (
           <div className="mt-[21px] mb-4 w-3/4 aspect-video">
             <iframe
               src={candidate.video.replace("watch?v=", "embed/")}
@@ -88,6 +98,10 @@ const getRoleColor = (role: string) => {
               allowFullScreen
               className="border-0 w-full h-full rounded-lg"
             />
+          </div>
+        ) : (
+          <div className="mt-[21px] mb-4 w-3/4 aspect-video flex items-center justify-center bg-gray-100 rounded-lg">
+            <span className="text-gray-500 text-xl">Video Unavailable</span>
           </div>
         )}
       </section>
