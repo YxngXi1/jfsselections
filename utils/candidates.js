@@ -17,14 +17,14 @@ export const candidates = [
     name: "DAVID CHEN",
     image: "/candidates/vicepresident/David.JPG",
     role: "vice president",
-    poster: "",
+    poster: "posters/vicepresident/david.pdf",
     video: "",
   },
   {
     name: "ABDELRAHMAN ELSIDDIG",
     image: "/candidates/vicepresident/abdel.jpg",
     role: "vice president",
-    poster: "",
+    poster: "/posters/vicepresident/abdel.pdf",
     video: "",
   },
   {
