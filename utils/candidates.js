@@ -17,7 +17,7 @@ export const candidates = [
     name: "DAVID CHEN",
     image: "/candidates/vicepresident/David.JPG",
     role: "vice president",
-    poster: "posters/vicepresident/david.pdf",
+    poster: "/posters/vicepresident/david.pdf",
     video: "",
   },
   {
