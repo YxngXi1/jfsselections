@@ -39,7 +39,7 @@ const getRoleColor = (role: string) => {
       <hr className="h-[20px]"></hr>
       <div className="border-0 flex justify-center items-center w-full mt-8">
         <Link href='/'>
-          <p className="">&larr; Return Home</p>
+          <p className="text-xl">&larr; Return Home</p>
         </Link>
       </div>
 
@@ -72,7 +72,7 @@ const getRoleColor = (role: string) => {
               <h2 className="m-4 uppercase text-3xl font-light ml-4">&#8205; {candidate.role} CANDIDATE</h2>
             </div>
             {candidate.poster ? (
-              <Link href={candidate.poster}>
+              <Link href={candidate.poster} target="_blank">
                 <button className="text-2xl font-light hover:cursor-pointer">
                   View Candidate Poster &rarr;
                 </button>

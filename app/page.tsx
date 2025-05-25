@@ -83,7 +83,7 @@ export default function Home() {
         <main className="min-h-screen flex flex-col justify-center items-center text-center gap-y-10">
           <div className="flex flex-col gap-y-">
             <h1 className="text-6xl font-bold">PRESIDENT</h1>
-            <h2 className="w-[407px] text-xl font-light mb-20">TIP: Click on their profile to learn more about their <a className="font-bold">promises!</a></h2>
+            <h2 className="w-[350px] md:w-[407px] text-xl font-light mb-20">TIP: Click on their profile to learn more about their <a className="font-bold">promises!</a></h2>
           </div>
           <div
             className={
@@ -140,7 +140,7 @@ export default function Home() {
         <main className="min-h-screen flex flex-col justify-center items-center text-center gap-y-10">
           <div className="flex flex-col gap-y-2 justify-center items-center">
             <h1 className="text-6xl font-bold text-center">VICE PRESIDENT</h1>
-            <h2 className="w-[407px] text-xl font-light mb-20">TIP: Click on their profile to learn more about their <a className="font-bold">promises!</a></h2>
+            <h2 className="w-[350px] md:w-[407px] text-xl font-light mb-20">TIP: Click on their profile to learn more about their <a className="font-bold">promises!</a></h2>
           </div>
           <div
             className={
@@ -198,7 +198,7 @@ export default function Home() {
         <main className="min-h-screen flex flex-col justify-center items-center text-center gap-y-10">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <h1 className="text-6xl font-bold text-center">SOCIAL CONVENOR</h1>
-            <h2 className="w-[407px] text-xl font-light mb-20 mx-auto text-center">TIP: Click on their profile to learn more about their <a className="font-bold">promises!</a></h2>
+            <h2 className="w-[350px] md:w-[407px] text-xl font-light mb-20 mx-auto text-center">TIP: Click on their profile to learn more about their <a className="font-bold">promises!</a></h2>
           </div>
           <div
             className={
@@ -256,7 +256,7 @@ export default function Home() {
         <main className="min-h-screen flex flex-col justify-center items-center text-center gap-y-10">
           <div className="flex flex-col gap-y-2 justify-center items-center">
             <h1 className="text-6xl font-bold text-center">CLUBS LIAISON</h1>
-            <h2 className="w-[407px] text-xl font-light mb-20">TIP: Click on their profile to learn more about their <a className="font-bold">promises!</a></h2>
+            <h2 className="w-[350px] md:w-[407px] text-xl font-light mb-20">TIP: Click on their profile to learn more about their <a className="font-bold">promises!</a></h2>
           </div>
           <div
             className={
