@@ -121,6 +121,25 @@ const getRoleColor = (role: string) => {
         </Link>
       </div>
       <hr className="h-[20px] border-0"></hr>
+      
+      <div
+      style={{
+        position: "fixed",
+        bottom: "24px",
+        right: "24px",
+        zIndex: 1000,
+        background: "rgba(0,0,0,0.75)",
+        color: "white",
+        padding: "6px 14px",
+        borderRadius: "12px",
+        fontSize: "0.85rem",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.12)",
+        pointerEvents: "none",
+      }}
+      >
+        ↓ Scroll down to view the video
+      </div>
+
     </>
   );
 }
