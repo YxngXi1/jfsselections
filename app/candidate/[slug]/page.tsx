@@ -36,7 +36,7 @@ const getRoleColor = (role: string) => {
 
   return (
     <>
-      <hr className="h-[20px]"></hr>
+      <hr className="border-0 h-[20px]"></hr>
       <div className="border-0 flex justify-center items-center w-full mt-8">
         <Link href='/'>
           <p className="text-xl">&larr; Return Home</p>
@@ -92,9 +92,18 @@ const getRoleColor = (role: string) => {
         {candidate.video ? (
           <div className="mt-[21px] mb-4 w-3/4 aspect-video">
             <iframe
-              src={candidate.video.replace("watch?v=", "embed/")}
+              src={
+                // If candidate.video is a Vimeo ID (all digits)
+                candidate.video.match(/^\d+$/)
+                  ? `${candidate.video}`
+                  // If candidate.video is a full Vimeo URL
+                  : candidate.video.includes("vimeo.com")
+                    ? candidate.video.replace(/vimeo\.com\/(\d+)/, "player.vimeo.com/video/$1") + "?h=9e95efaa31&badge=0&autopause=0&player_id=0&app_id=58479"
+                    // Otherwise, assume YouTube
+                    : candidate.video.replace("watch?v=", "embed/")
+              }
               title={candidate.name + " campaign video"}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
               allowFullScreen
               className="border-0 w-full h-full rounded-lg"
             />
