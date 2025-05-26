@@ -62,9 +62,9 @@ export default function Home() {
               >
                 Learn More
               </button>
-              <button className="text-lg w-[140px] h-[50px] mx-auto md:text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl md:w-[182px] md:h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out">
-                Vote Now
-              </button>
+              <Link href="https://docs.google.com/document/d/e/2PACX-1vSF8lG2KG9Rn1BGdskHVv2iM4C4VfmIDzPBj0f91WA9s9M_NWgXeaq6-SEbtCX-4GIsyDomifOTUgsr/pub">
+                <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Where to Vote</button>
+              </Link>
             </div>
           </div>
           
@@ -132,7 +132,9 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Vote Now</button>
+          <Link href="https://docs.google.com/document/d/e/2PACX-1vSF8lG2KG9Rn1BGdskHVv2iM4C4VfmIDzPBj0f91WA9s9M_NWgXeaq6-SEbtCX-4GIsyDomifOTUgsr/pub">
+            <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Where to Vote</button>
+          </Link>
         </main>
 
         {/* VICE PRESIDENTS */}
@@ -189,7 +191,9 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Vote Now</button>
+          <Link href="https://docs.google.com/document/d/e/2PACX-1vSF8lG2KG9Rn1BGdskHVv2iM4C4VfmIDzPBj0f91WA9s9M_NWgXeaq6-SEbtCX-4GIsyDomifOTUgsr/pub">
+            <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Where to Vote</button>
+          </Link>
         </main>
 
         {/* SOCIAL CONVENOR */}
@@ -247,7 +251,9 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Vote Now</button>
+          <Link href="https://docs.google.com/document/d/e/2PACX-1vSF8lG2KG9Rn1BGdskHVv2iM4C4VfmIDzPBj0f91WA9s9M_NWgXeaq6-SEbtCX-4GIsyDomifOTUgsr/pub">
+            <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Where to Vote</button>
+          </Link>
         </main>
 
         {/* CLUBS LIAISON */}
@@ -305,7 +311,9 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Vote Now</button>
+          <Link href="https://docs.google.com/document/d/e/2PACX-1vSF8lG2KG9Rn1BGdskHVv2iM4C4VfmIDzPBj0f91WA9s9M_NWgXeaq6-SEbtCX-4GIsyDomifOTUgsr/pub">
+            <button className="text-2xl font-light text-[#0073FF] hover:border-0 hover:bg-[#0073FF] hover:text-white rounded-3xl w-[182px] h-[65px] cursor-pointer bg-white border border-[#0073FF] transition duration-700 ease-in-out mx-auto">Where to Vote</button>
+          </Link>
         </main>
       </section>
       <hr className="h-[20px] md:h-0 border-0"></hr>
