@@ -83,7 +83,7 @@ const getRoleColor = (role: string) => {
                 disabled
                 title="Poster not available"
               >
-                Poster Coming Soon
+                This Candidate has no Poster
               </button>
             )}
           </div>
@@ -110,7 +110,7 @@ const getRoleColor = (role: string) => {
           </div>
         ) : (
           <div className="hover:cursor-not-allowed mt-[21px] mb-4 w-3/4 aspect-video flex items-center justify-center bg-gray-100 rounded-lg">
-            <span className="text-gray-500 text-xl">Video Unavailable</span>
+            <span className="text-gray-500 text-xl">This Candidate has no Video.</span>
           </div>
         )}
       </section>
