@@ -42,7 +42,7 @@ export const candidates = [
     video: "https://player.vimeo.com/video/1087607126?h=445dde3d87&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   },
   {
-    name: "NADINE",
+    name: "NADINE MUGHAL",
     image: "/candidates/clubsliason/nadine.jpg",
     role: "clubs liason",
     poster: "/posters/clubsliason/nadine.pdf",
