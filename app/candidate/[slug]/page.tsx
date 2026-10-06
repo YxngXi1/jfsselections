@@ -7,16 +7,16 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const getRoleColor = (role: string) => {
-  const normalized = role.toLowerCase().replace(/\s+/g, ""); // e.g., "Vice President" → "vicepresident"
+  const normalized = role.toLowerCase().replace(/\s+/g, ""); // e.g., "grade 9 rep" → "grade9rep"
   switch (normalized) {
-    case "president":
-      return "#2F3E46";
-    case "vicepresident":
-      return "#E07A5F";
-    case "treasurer":
-      return "#457B9D";
-    case "socialconvenor":
-      return "#A3B18A";
+    case "grade9rep":
+      return "#6D597A";
+    case "grade10rep":
+      return "#B56576";
+    case "grade11rep":
+      return "#E56B6F";
+    case "grade12rep":
+      return "#355070";
     default:
       return "#0073FF";
   }
